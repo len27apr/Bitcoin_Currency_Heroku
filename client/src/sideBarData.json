@@ -1,0 +1,42 @@
+[
+    {
+        "photo":"/Images/Dashboard.jpeg",
+        "name":"Dashboard"
+    },
+    {
+        "photo":"/Images/Backlog_Remover.jpeg",
+        "name":"Backlog Remover"
+    },
+    {
+        "photo":"/Images/Rank_up.jpg",
+        "name":"Rank up"
+    },
+    {
+        "photo":"/Images/Speed_up.jpeg",
+        "name":"Speed up"
+    },
+    {
+        "photo":"/Images/Accuracy_up.jpg",
+        "name":"Accuracy up"
+    },
+    {
+        "photo":"/Images/Revision.jpg",
+        "name":"Revision"
+    },
+    {
+        "photo":"/Images/Test_Creator.jpeg",
+        "name":"Test Creator"
+    },
+    {
+        "photo":"/Images/Assignment_creator.jpg",
+        "name":"Assignment Creator"
+    },
+    {
+        "photo":"/Images/Study_material.jpeg",
+        "name":"Study Material"
+    },
+    {
+        "photo":"/Images/Formula_sheet.jpg",
+        "name":"Formula Sheet"
+    }
+]
