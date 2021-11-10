@@ -6,9 +6,9 @@ export function HeaderContainer() {
 
     return <Header>
         <Header.Group>
-            <Header.Image src='/Images/bitcoin_header3.png' alt='Bitcoin' width='220px' height='65px' />
+            <Header.Navbar />
+            <Header.Image src='/Images/bitcoin_header3.png' alt='Bitcoin' width='220px' height='65px' resize />
         </Header.Group>
-         <Header.Navbar />
         <Header.Group>
             <Header.Dropdown >
                 <Header.Option value='1' defaultvalue='selected'>Activity</Header.Option>
@@ -25,7 +25,7 @@ export function HeaderContainer() {
             <Header.Search></Header.Search>
         </Header.Group>
         <Header.Group>
-            <Header.Image src='/Images/bell.jpg' alt='Bell' width='60px' height='40px'/>
+            <Header.Image src='/Images/bell.jpg' alt='Bell' width='60px' height='40px' />
             <HeaderDropDown height="20px" width="20px" />
         </Header.Group>
     </Header>

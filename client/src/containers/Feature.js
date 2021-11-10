@@ -56,7 +56,7 @@ export function FeatureContainer() {
                 </Feature.Group>
             </Feature.Frame>
             <Feature.Frame>
-                <ResponsiveContainer width="85%" height={470} >
+                <ResponsiveContainer width="90%" height={470} >
                     <LineChart data={graphArray}>
                         <Line dataKey="rate" stroke="red" />
                         <XAxis dataKey="id" tickLine={false} />

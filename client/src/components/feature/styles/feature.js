@@ -44,10 +44,11 @@ margin-bottom: 100px;
     margin-top:-50px;
     margin-left:20px;
     padding-left:10px;
+    margin-right:0px;
 }
 
 >${Group}:last-of-type{
-    margin-right:90px;
+    margin-right:0px;
     justify-content:space-between;
 }
 `;
@@ -62,4 +63,9 @@ margin-top:40px;
 {
     margin-top:120px;
     margin-left:0px;
+    
+    >${Frame}:last-of-type{
+        margin-right:-20px;
+    }
+
 }`;

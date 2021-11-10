@@ -4,7 +4,12 @@ export const Image = styled.img`
  ${({ height }) => height && `height:${height};`}   
  ${({ width }) => width && `width:${width};`}
  ${({ borderRadius }) => borderRadius && `border-radius:${borderRadius};`}
- 
+
+ @media(max-width:800px)
+{
+    ${({resize})=> resize && 'width:110px;' }
+    ${({resize})=> resize && 'height: 36px;' }
+}
 `;
 
 export const SearchIcon = styled(Image)`
@@ -19,6 +24,7 @@ border:0;
 padding:10px;
 color:blue;
 width:100%;
+
 `;
 
 export const SearchInput = styled.input`
@@ -26,6 +32,7 @@ border:0;
 width:100%;
 height:40px;
 border-radius:10px;
+
 `;
 
 export const Option = styled.option`
@@ -39,15 +46,15 @@ border:2px solid blue;
 display:flex;
 padding:4px;
 flex-direction:column;
-margin-top:-7px;
+
 display:none;
 
 @media(max-width:800px)
 {
+    width:27px;
+    height:25px;
     display:block;
-    margin-top:30px;
-    margin-left:40px;
-    position:absolute;
+    margin-right:24px;
 }
 
 `;
@@ -57,6 +64,14 @@ width:45px;
 height:5px;
 background-color: blue;
 margin:8px;
+
+@media(max-width:800px)
+{
+    width:22px;
+    height:2.6px;
+    display:block;
+    margin:4px;
+}
 `;
 
 export const Group = styled.div`
@@ -71,15 +86,22 @@ export const Group = styled.div`
     @media(max-width:800px)
     {
       display:none;
-      :first-of-type{
+      :first-of-type
+      {
           display:block;
-          margin-left:27%;
+          margin-left:50px;
           margin-top:30px;
+          display:flex;
+          m
       }
-      :last-of-type{
+      :last-of-type
+      {
         display:block;
-        margin-top:20px;
-        margin-right:30px;
+        margin-top:30px;
+        margin-right:50px;
+        margin-left:150px;
+        display:flex;
+        
       }
     }
 `;
