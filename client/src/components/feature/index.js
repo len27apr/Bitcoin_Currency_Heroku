@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Frame, Group, HeaderText, Image, Select, Option  } from './styles/feature';
+import { Container, Frame, Group, HeaderText, Image, Select, Option, Footer  } from './styles/feature';
 
 export default function Feature({children, ...restProps})
 {
@@ -46,4 +46,11 @@ Feature.Option=function FeatureOption({children,...restProps})
     return <Option {...restProps}>
         {children}
     </Option>
+}
+
+Feature.Footer=function FeatureFooter({children,...restProps})
+{
+   return <Footer>
+       {children}
+   </Footer>
 }

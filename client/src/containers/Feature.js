@@ -27,7 +27,7 @@ export function FeatureContainer() {
 
     if (graphArray.length > 20) {
         for (let i = 0; i < 10; i++) {
-            graphArray.pop();
+            graphArray.shift();
         }
     }
 
@@ -66,6 +66,13 @@ export function FeatureContainer() {
                     </LineChart>
                 </ResponsiveContainer>
             </Feature.Frame>
+            {
+            graphArray.length>0 && 
+            <Feature.Footer>
+                <h2 style={{"margin":"10px"}}>1 Bitcoin:</h2>
+                <h2 style={{"margin":"10px"}}>{`${graphArray[graphArray.length-1].rate}  ${graphArray[graphArray.length-1].name}`}</h2>
+            </Feature.Footer>
+            }
         </Feature>
     )
 }

@@ -20,7 +20,8 @@ axios.get('https://bitpay.com/api/rates')
         response.data.map((data) => {
               bitcoinArray.push({
                id: data.code,
-               rate: data.rate
+               rate: data.rate,
+               name:data.name
            })
         })
        

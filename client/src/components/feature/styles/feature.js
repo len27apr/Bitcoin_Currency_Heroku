@@ -7,6 +7,22 @@ export const HeaderText=styled.h2`
 }
 `;
 
+export const Footer=styled.div`
+  display:flex;
+  padding:15px;
+  margin-bottom:20px;
+  margin-top:-70px;
+  width:85%;
+  position:relative;
+  left:60px;
+  
+
+  @media(max-width:800px)
+  {
+      font-size:12px
+  }
+`;
+
 export const Image=styled.img`
 width:50px;
 height:50px;
