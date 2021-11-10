@@ -13,7 +13,7 @@ export function FeatureContainer() {
 
     useEffect(() => {
         socket.on('bitcoin', (data) => {
-            console.log('the data value in the client is: ', data);
+            // console.log('the data value in the client is: ', data);
             setGraphValue((prevState) => {
                 return [
                     ...prevState,

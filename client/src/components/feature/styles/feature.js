@@ -42,8 +42,8 @@ margin-bottom: 100px;
 }
 :last-of-type{
     margin-top:-50px;
-    margin-left:30px;
-    padding-left:60px;
+    margin-left:20px;
+    padding-left:10px;
 }
 
 >${Group}:last-of-type{

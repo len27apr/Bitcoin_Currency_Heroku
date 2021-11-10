@@ -50,9 +50,18 @@ axios.get('https://bitpay.com/api/rates')
         console.log('the error obtained is: ',err);
     });
 
+if(process.env.NODE_ENV === 'production')
+{
+    app.use(express.static('client/build'));
+     app.get('*',(req,res)=> {
+        res.sendFile(path.resolve(__dirname,"client","build","index.html"));
+    })
+}
+    
+const PORT = process.env.PORT || 4000;
 
-server.listen(4000, () => {
-    console.log('listening: port 8080');
+server.listen(PORT, () => {
+    console.log('listening: port 4000');
 })
 
 
