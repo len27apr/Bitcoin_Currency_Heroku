@@ -40,7 +40,11 @@ margin-bottom: 100px;
 :first-of-type{
     margin-top:-20px;
 }
-
+:last-of-type{
+    margin-top:-50px;
+    margin-left:30px;
+    padding-left:60px;
+}
 
 >${Group}:last-of-type{
     margin-right:90px;

@@ -6,16 +6,14 @@ import { ResponsiveContainer, Line, LineChart, XAxis, YAxis, CartesianGrid, Tool
 import Feature from '../components/feature';
 
 
-const socket = io("http://localhost:8080", {
-    transports: ['websocket', 'polling']
-});
+const socket = io();
 
 export function FeatureContainer() {
     const [graphArray, setGraphValue] = useState([]);
 
     useEffect(() => {
         socket.on('bitcoin', (data) => {
-            // console.log('the data value is: ', data);
+            console.log('the data value in the client is: ', data);
             setGraphValue((prevState) => {
                 return [
                     ...prevState,
@@ -57,16 +55,17 @@ export function FeatureContainer() {
                     </Feature.DropDown>
                 </Feature.Group>
             </Feature.Frame>
-            <ResponsiveContainer width="90%" height={470} >
-                <LineChart data={graphArray}>
-                    <Line dataKey="commodity1_rate" stroke="red" />
-                    <Line dataKey="commodity2_rate" stroke="blue" />
-                    <XAxis tickLine={false}  />
-                    <YAxis tickCount={6} />
-                    <Tooltip />
-                    <CartesianGrid opacity={0.2} />
-                </LineChart>
-            </ResponsiveContainer> */
+            <Feature.Frame>
+                <ResponsiveContainer width="85%" height={470} >
+                    <LineChart data={graphArray}>
+                        <Line dataKey="rate" stroke="red" />
+                        <XAxis dataKey="id" tickLine={false} />
+                        <YAxis tickCount={6} />
+                        <Tooltip />
+                        <CartesianGrid opacity={0.2} />
+                    </LineChart>
+                </ResponsiveContainer>
+            </Feature.Frame>
         </Feature>
     )
 }
