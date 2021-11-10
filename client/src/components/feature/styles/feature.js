@@ -44,7 +44,7 @@ margin-bottom: 100px;
     margin-top:-50px;
     margin-left:20px;
     padding-left:10px;
-    margin-right:-70px;
+    margin-right:-20px;
 }
 
 >${Group}:last-of-type{
