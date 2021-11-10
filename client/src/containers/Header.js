@@ -6,7 +6,7 @@ export function HeaderContainer() {
 
     return <Header>
         <Header.Group>
-            <Header.Image src='/Images/ACADZA.png' alt='Acadza' width='220px' height='65px' />
+            <Header.Image src='/Images/bitcoin_header3.png' alt='Bitcoin' width='220px' height='65px' />
         </Header.Group>
          <Header.Navbar />
         <Header.Group>
